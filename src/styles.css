@@ -1,9 +1,9 @@
 :root {
-  --bg: #0b0c10;
+  --bg: #FFFFFF;
   --panel: #111217;
-  --text: #e6e6e6;
+  --text: #707070;
   --muted: #9aa0a6;
-  --accent: #7c5cff;
+  --accent: #202020;
 }
 
 * { box-sizing: border-box; }
@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--text);
-  background: radial-gradient(1200px 600px at 60% -10%, #1a1c24, var(--bg));
+  background: var(--bg);
 }
 
 a { color: inherit; text-decoration: none; }
@@ -21,7 +21,7 @@ a { color: inherit; text-decoration: none; }
 .nav {
   position: sticky; top: 0;
   display: flex; gap: 1rem; align-items: center; justify-content: space-between;
-  padding: 1rem 1.25rem; border-bottom: 1px solid #22232a; background: rgba(11,12,16,0.6);
+  padding: 1rem 1.25rem; border-bottom: 1px solid #22232a; background: var(--bg);
 }
 .nav nav { display: flex; gap: 1rem; }
 .nav a.active { color: var(--accent); font-weight: 600; }

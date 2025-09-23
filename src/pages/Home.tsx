@@ -1,10 +1,15 @@
 export default function Home() {
   return (
     <section>
-      <h1>Hi, I’m MRR 👋</h1>
+      <img src="src/assets/MANILA.png" alt="Manila" />
       <p>
-        I build fast, accessible web experiences using React 19 + TypeScript.
+        Welcome to Manila Runway Republic, the ultimate destination for young
+        fashion enthusiasts! We are dedicated to nurturing the talents of
+        aspiring models and creating high-quality events for kids and teens. Our
+        platform offers a comprehensive range of opportunities, from
+        professional photoshoots to dazzling fashion shows.
       </p>
+      <img src="src/assets/RUNWAY.png" alt="Runway" />
       <a className="btn" href="/projects">
         View Projects
       </a>
