@@ -1,0 +1,52 @@
+/*LOCAL STYLES FOR HOME PAGE*/
+.details{
+    width: 50%;
+    margin: 0 210px;
+    padding-top: 80px;
+    gap: 20px;
+}
+
+.paragraph{
+    padding: 20px 120px;
+    text-align: center;
+}
+.runway{
+    display: flex;
+    justify-self: end;
+    padding-right: 20px;
+}
+
+.images{
+    padding: 0 120px;
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    transform: translateY(-45%);
+}
+
+.images img:nth-child(2) {
+    transform: translateX(60px);
+}
+
+.images img:nth-child(3) {
+    transform: translateX(120px);
+}
+
+.images img:nth-child(4) {
+    transform: translateX(20px);
+}
+
+.brands{
+    transform: translateY(-80%);
+    padding: 0 80px;
+}
+.brandLogos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+.brandLogos img{
+    width: 200px;
+}
