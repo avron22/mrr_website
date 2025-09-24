@@ -5,6 +5,7 @@ import styles from "./Home.module.css";
 const Home = () => {
   return (
     <>
+    <div className={styles.wrapper}>
       <section className={styles.details}>
         <img src="/src/assets/MANILA.png" alt="Manila" />
         <p className={styles.paragraph}>
@@ -31,6 +32,8 @@ const Home = () => {
           <img src="/src/assets/logos/DKNY.jpg" alt="DKNY logo" />
         </div>
       </section>
+    </div>
+      
     </>
   );
 };

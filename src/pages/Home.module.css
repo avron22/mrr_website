@@ -1,4 +1,7 @@
 /*LOCAL STYLES FOR HOME PAGE*/
+.wrapper{
+    max-width: 1600px !important;
+}
 .details{
     width: 50%;
     margin: 0 210px;

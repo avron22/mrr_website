@@ -6,7 +6,7 @@ export default function Navbar() {
 
     return (
         <header className="nav">
-            <a className="brand" href="/"><img src="/src/assets/logos/site-logo.png" alt="Site Logo" /></a>
+            <a className="siteLogo" href="/"><img src="/src/assets/logos/site-logo.png" alt="Site Logo" /></a>
             <nav>
                 <NavLink to="/mainboard" end>MAIN BOARD</NavLink>
                 <NavLink to="/infocus">INFOCUS</NavLink>
