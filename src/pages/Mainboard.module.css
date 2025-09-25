@@ -1,0 +1,66 @@
+@import "../styles.css";
+
+.wrapper{ 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* SECTION LAYOUT */
+.top{
+    height: 50%;
+}
+
+.center{
+    margin: 0;
+    top: 50%;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    background-color: var(--accent);
+    color: var(--bg);
+    text-align: center;
+    padding: 1rem;
+}
+.center h1{
+    font-size: 76px;
+    font-weight: 500;
+}
+
+.bottom{
+    height: 50%;
+}
+/*==================*/
+
+.kidsGrid, .teensGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      /* important to prevent horizontal scroll */
+    gap: 0;
+}
+
+.kidsGrid img, .teensGrid img{
+    max-width: 630px;
+}
+
+.kidsGrid img:nth-child(2), .teensGrid img:nth-child(2) {
+    transform: translateX(-100px);
+}
+
+.kidsGrid img:nth-child(3), .teensGrid img:nth-child(3) {
+    transform: translateX(-180px);
+}
+
+.kidsGrid img:nth-child(4), .teensGrid img:nth-child(4) {
+    transform: translateX(-260px);
+}
+
+.grayscale{
+    filter: grayscale(1);
+}
