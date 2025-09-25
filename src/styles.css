@@ -1,7 +1,7 @@
 :root {
   --bg: #ffffff;
   --panel: #111217;
-  --text: ##4d4d4d;
+  --text: #4d4d4d;
   --muted: #707070;
   --accent: #202020;
 }
@@ -34,9 +34,40 @@ a {
 }
 
 .container {
-  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 288px;
+  border-bottom: 1px solid #22232a;
+  background: var(--bg);
+}
+
+.nav nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.siteLogo{
+  padding: 0;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
 }
 
 /*NAVIGATION DROPDOWN STYLES*/
@@ -83,8 +114,8 @@ a {
 
 .nav-submenu a:hover,
 .nav-submenu a.active {
-    background-color: var(--accent);
-    color: var(--bg);
+    background-color: var(--muted);
+    color: var(--bg) !important;
 }
 
 /* Responsive adjustments */
@@ -97,31 +128,6 @@ a {
     }
 }
 /*==========================================*/
-
-.nav {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 288px;
-  border-bottom: 1px solid #22232a;
-  background: var(--bg);
-}
-
-.nav nav {
-  display: flex;
-  gap: 1rem;
-}
-
-.nav a.active {
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.brand {
-  font-weight: 700;
-  letter-spacing: 0.3px;
-}
 
 h1 {
   font-size: 2rem;
