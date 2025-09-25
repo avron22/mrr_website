@@ -1,4 +1,7 @@
 /*LOCAL STYLES FOR HOME PAGE*/
+body{
+    overflow-x: hidden !important;
+}
 .wrapper{
     max-width: 1600px !important;
 }
@@ -16,7 +19,7 @@
 .runway{
     display: flex;
     justify-self: end;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 .images{
@@ -27,16 +30,24 @@
     transform: translateY(-45%);
 }
 
+.images img{
+    transition: transform 0.4s ease-in-out;
+}
+
+.images img:hover{
+    transform: translateX(5px);
+}
+
 .images img:nth-child(2) {
-    transform: translateX(60px);
+    margin-left: 50px;
 }
 
 .images img:nth-child(3) {
-    transform: translateX(120px);
+    margin-left: 100px;
 }
 
 .images img:nth-child(4) {
-    transform: translateX(20px);
+    margin-left: -10px;
 }
 
 .brands{
