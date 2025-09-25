@@ -1,0 +1,147 @@
+/* -------------------- */
+/* Global container     */
+/* -------------------- */
+.grwmrr-container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display:block;
+  clear: both;
+}
+
+.mrr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.grwmrr-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* -------------------- */
+/* Section 1: GRWMRR    */
+/* -------------------- */
+.grwmrr-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+  gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.grwmrr-item img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease-in-out;
+}
+
+.grwmrr-item img:hover {
+  transform: scale(1.03);
+}
+
+/* -------------------- */
+/* Section 2: Rising Stars */
+/* -------------------- */
+
+/* -------------------- */
+/* Extra Section Full Width Background Fix */
+/* -------------------- */
+.extra-section {
+  position: relative;
+  width: 100vw;          /* span the entire viewport width */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;    /* trick to remove parent container centering */
+  margin-right: -50vw;
+  padding: 6rem 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.extra-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #CFCFCF;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Make sure content inside stays centered */
+.extra-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.extra-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.extra-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+/* Each group (caption + 2 images) */
+.extra-group {
+  margin-bottom: 4rem; /* space between groups */
+  text-align: left;    /* caption aligns left */
+}
+
+.extra-caption {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 3rem;
+}
+
+/* 2 images per row */
+.extra-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15rem;
+  justify-items: center;
+  align-items: start;
+  margin-bottom: 150px;
+}
+
+.extra-item {
+  text-align: center;
+}
+
+.extra-item img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+
+  transition: transform 0.25s ease-in-out;
+}
+
+.extra-item img:hover {
+  transform: scale(1.03);
+}
+
+/* -------------------- */
+/* Responsive Design    */
+/* -------------------- */
+@media (max-width: 900px) {
+  .extra-images {
+    grid-template-columns: 1fr; /* stack images vertically */
+  }
+}

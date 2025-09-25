@@ -1,11 +1,11 @@
 
 
     import { MapPin, Mail } from "lucide-react";
-    import "./Contactus.css";
+    import "./ContactForm.css";
     
         
 
-const Contact: React.FC = () => {
+const Contactus: React.FC = () => {
   return (
     <section className="contact-section">
       <div className="contact-container">
@@ -51,4 +51,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default Contactus;
