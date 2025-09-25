@@ -1,0 +1,132 @@
+.wrapper{
+    width: 100%;
+}
+
+.infocusImg{
+    padding: 1rem 100px;
+}
+
+.runwayModels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.runwayModels h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.runwayModelsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    height: 80vh;
+}
+
+.runwayModelsGrid img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.runwayModelsItem{
+    position: relative;
+    overflow: hidden;
+}
+
+/*Style for contact us panel*/
+.runwayModelsItem:nth-child(8) {
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.runwayModelsItem:nth-child(8) p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*Contact button style*/
+
+.runwayModelsItem:nth-child(8) button {
+    position: relative;
+    background-color: var(--bg);
+    color: var(--text);
+    border: 3px solid;
+    border-radius: 26px;
+    padding: 12px 24px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s ease;
+}
+
+.runwayModelsItem:nth-child(8) button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--text);
+    z-index: 0;
+    transition: width 0.4s ease;
+}
+
+.runwayModelsItem:nth-child(8) button:hover::before {
+    width: 100%;
+}
+
+.runwayModelsItem:nth-child(8) button span {
+    position: relative;
+    z-index: 1;
+}
+
+.runwayModelsItem:nth-child(8) button:hover span {
+    color: var(--bg);
+}
+
+.buttonContainer{
+    width: 250px;
+}
+.buttonContainer .buttonWrapper button:hover + img.icon{
+    transform: translate(0, -30px);
+    opacity: 1;
+}
+.buttonWrapper{
+    display: flex;
+    justify-content: end;
+}
+img.icon{
+
+    transform: translate(-30px, 0px);
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/*==================================================*/
+/*SKEW IMAGE STYLES*/
+.runwayModelsItem:not(:last-child){
+    z-index: 1;
+    transform: skewX(-20deg);
+}
+
+.runwayModelsItem img{
+    transform: skewX(20deg) scale(1.8) translateY(100px) translateX(-10px);
+}
+
+
+.runwayModelsGrid .runwayModelsItem:not(:last-child){
+    margin-left: 26%;
+
+}
