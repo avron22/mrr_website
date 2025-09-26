@@ -3,17 +3,38 @@
 /* -------------------- */
 .grwmrr-container {
   text-align: center;
-  padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  display:block;
+  display: block;
   clear: both;
 }
 
+/* -------------------- */
+/* First Section        */
+/* -------------------- */
+.first-section {
+  background-color: #ffffff; /* adjust if needed */
+  max-width: 1200px;         /* keeps content centered */
+  margin: 0 auto;            /* centers the section */
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+}
+
+.mrr-wrapper {
+  width: 100%;          /* take full width */
+  margin: 2rem 0;       /* top & bottom spacing */
+}
+
 .mrr {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  text-align: left;
+  max-width: 40%;     /* control image size */
+
+}
+
+.mrr img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-right: 1000px;
 }
 
 .grwmrr-subtitle {
@@ -46,56 +67,44 @@
 }
 
 /* -------------------- */
-/* Section 2: Rising Stars */
+/* Second Section       */
 /* -------------------- */
-
-/* -------------------- */
-/* Extra Section Full Width Background Fix */
-/* -------------------- */
-.extra-section {
+.second-section {
   position: relative;
-  width: 100vw;          /* span the entire viewport width */
+  width: 100vw;         /* full width background */
   left: 50%;
   right: 50%;
-  margin-left: -50vw;    /* trick to remove parent container centering */
+  margin-left: -50vw;   /* center align trick */
   margin-right: -50vw;
+  background-color: #cfcfcf;
   padding: 6rem 0;
   box-sizing: border-box;
   overflow: hidden;
 }
-
-.extra-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #CFCFCF;
-  z-index: -1;
-  overflow: hidden;
+html, body {
+  overflow-x: hidden;   /* prevent horizontal scrollbar */
 }
 
-/* Make sure content inside stays centered */
 .extra-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   position: relative;
   z-index: 1;
-  overflow: hidden;
 }
 
 .extra-title {
-  font-size: 1.75rem;
+  font-size: 2.0rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .extra-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.50rem;
   color: #555;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 /* Each group (caption + 2 images) */
@@ -129,7 +138,6 @@
   width: 100%;
   max-width: 500px;
   border-radius: 8px;
-
   transition: transform 0.25s ease-in-out;
 }
 
@@ -137,11 +145,62 @@
   transform: scale(1.03);
 }
 
+
+.hero-section {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: #444;
+  margin-bottom: 1rem;
+  font-family: Adobe Devanagari, serif;
+}
+
+/* Shared button styles */
+.hero-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+/* Dark button */
+.dark-btn {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-btn:hover {
+  background-color: #222;
+}
+
+/* White button */
+.light-btn {
+  background-color: #fff;
+  color: #444;
+  border: 2px solid #444;
+}
+
+.light-btn:hover {
+  background-color: #f5f5f5;
+}
 /* -------------------- */
 /* Responsive Design    */
 /* -------------------- */
 @media (max-width: 900px) {
+  .grwmrr-grid {
+    grid-template-columns: 1fr; /* stack first section images */
+  }
+
   .extra-images {
-    grid-template-columns: 1fr; /* stack images vertically */
+    grid-template-columns: 1fr; /* stack second section images */
+    gap: 3rem;
+    margin-bottom: 80px;
   }
 }
