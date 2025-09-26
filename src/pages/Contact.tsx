@@ -1,13 +1,12 @@
 
-
-    import { MapPin, Mail } from "lucide-react";
-    import "./Contactus.css";
-    
-        
+import "./Contactus.css";
 
 const Contact: React.FC = () => {
   return (
     <section className="contact-section">
+      <div className="contact-banner">
+        <img src="/src/assets/contact-us.png" alt="Contact Banner" />
+      </div>
       <div className="contact-container">
         {/* Left Section */}
         <div className="contact-info">
@@ -18,15 +17,15 @@ const Contact: React.FC = () => {
 
           <div className="contact-details">
             <div className="contact-item">
-              <MapPin className="icon" />
-              <p>29 20th Ave, Cubao, Quezon City, 1110 Metro Manila</p>
+              <img src="/src/assets/pin.svg" alt="Location" className="icon" />
+              <p className="address">29 20th Ave, Cubao, Quezon City, 1110 Metro Manila</p>
             </div>
             <div className="contact-item">
-              <Mail className="icon" />
-              <div>
-                <p>models@manilarunwayrepublic.com</p>
-                <p>kathy@manilarunwayrepublic.com</p>
-              </div>
+              <img src="/src/assets/email.svg" alt="Email" className="icon" />
+              <div className="email-list">
+            <p className="email">models@manilarunwayrepublic.com</p>
+            <p className="email">kathy@manilarunwayrepublic.com</p>
+          </div>
             </div>
           </div>
         </div>

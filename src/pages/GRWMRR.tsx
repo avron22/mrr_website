@@ -18,27 +18,33 @@ const GRWMRR: React.FC = () => {
   const images = [grwmrr1, grwmrr2, grwmrr3, grwmrr4];
 
   return (
-    <div className="grwmrr-container">
+    <div>
       {/* ----------------- */}
       {/* First Section     */}
       {/* ----------------- */}
-      <section className="mrr">
-        <img src="/src/assets/mrr.png" alt="mrr" />
-      </section>
-      <h2 className="grwmrr-subtitle">Rehearsals & Coaching Sessions</h2>
 
-      <div className="grwmrr-grid">
-        {images.map((img, index) => (
-          <div className="grwmrr-item" key={index}>
-            <img src={img} alt={`grwmrr-${index}`} />
-          </div>
-        ))}
+      <div className="mrr-wrapper">
+    <div className="mrr">
+      <img src="/src/assets/mrr.png" alt="mrr" />
+    </div>
+  </div>
+  
+      <div className="grwmrr-container first-section">
+        <h2 className="grwmrr-subtitle">Rehearsals & Coaching Sessions</h2>
+
+        <div className="grwmrr-grid">
+          {images.map((img, index) => (
+            <div className="grwmrr-item" key={index}>
+              <img src={img} alt={`grwmrr-${index}`} />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* ----------------- */}
       {/* Second Section    */}
       {/* ----------------- */}
-      <div className="extra-section">
+      <div className="extra-section second-section">
         <div className="extra-content">
           <h1 className="extra-title">Rising Stars</h1>
           <h2 className="extra-subtitle">
@@ -98,7 +104,21 @@ const GRWMRR: React.FC = () => {
           </div>
         </div>
       </div>
+      <section className="hero-section">
+  <p className="hero-text">
+    Manila Runway Republic is where your journey begins.
+  </p>
+  <p className="hero-text">
+    Join us as we celebrate youth, talent, and fashion.
+  </p>
+
+  {/* First button */}
+  <button className="hero-btn dark-btn">Contact Us </button>
+
+  
+</section>
     </div>
+    
   );
 };
 
