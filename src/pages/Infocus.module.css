@@ -5,28 +5,45 @@
 .infocusImg{
     padding: 1rem 100px;
 }
-
 .runwayModels{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   
 }
 
 .runwayModels h1{
     font-size: 40px;
     font-weight: 500;
+    
 }
 
-.runwayModelsGrid {
+.runwayModelsGrid{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+
+.runwayModelsGrid .row1{
+    padding-left: 140px;
+}
+.runwayModelsGrid .row2{
+    padding-right: 140px;
+}
+
+.runwayModelsGrid .row1, .runwayModelsGrid .row2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    height: 80vh;
+    min-height: 360px;
+    justify-items: start;
 }
 
-.runwayModelsGrid img {
-    width: 80%;
+
+.runwayModelsGrid .row1 img, .runwayModelsGrid .row2 img{
+    width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
@@ -35,10 +52,11 @@
 .runwayModelsItem{
     position: relative;
     overflow: hidden;
+    height: 360px !important;
 }
 
 /*Style for contact us panel*/
-.runwayModelsItem:nth-child(8) {
+.runwayModelsGrid .row2 .runwayModelsItem:last-child {
     background-color: var(--bg);
     color: var(--text);
     display: flex;
@@ -47,16 +65,18 @@
     align-items: center;
     padding: 20px;
     gap: 30px;
+    margin-left: 40px;
+    margin-right: -140px;
 }
 
-.runwayModelsItem:nth-child(8) p {
+.runwayModelsGrid .row2 .runwayModelsItem:last-child p {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
 /*Contact button style*/
 
-.runwayModelsItem:nth-child(8) button {
+.runwayModelsGrid .row2 .runwayModelsItem:last-child button {
     position: relative;
     background-color: var(--bg);
     color: var(--text);
@@ -69,7 +89,7 @@
     transition: color 0.4s ease;
 }
 
-.runwayModelsItem:nth-child(8) button::before {
+.runwayModelsGrid .row2 .runwayModelsItem:last-child button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -81,31 +101,31 @@
     transition: width 0.4s ease;
 }
 
-.runwayModelsItem:nth-child(8) button:hover::before {
+.runwayModelsGrid .row2 .runwayModelsItem:last-child button:hover::before {
     width: 100%;
 }
 
-.runwayModelsItem:nth-child(8) button span {
+.runwayModelsGrid .row2 .runwayModelsItem:last-child button span {
     position: relative;
     z-index: 1;
 }
 
-.runwayModelsItem:nth-child(8) button:hover span {
+.runwayModelsGrid .row2 .runwayModelsItem:last-child button:hover span {
     color: var(--bg);
 }
 
-.buttonContainer{
+.runwayModelsGrid .row2 .runwayModelsItem .buttonContainer{
     width: 250px;
 }
-.buttonContainer .buttonWrapper button:hover + img.icon{
+.runwayModelsGrid .row2 .runwayModelsItem .buttonContainer .buttonWrapper button:hover + img.icon{
     transform: translate(0, -30px);
     opacity: 1;
 }
-.buttonWrapper{
+.runwayModelsGrid .row2 .runwayModelsItem .buttonWrapper{
     display: flex;
     justify-content: end;
 }
-img.icon{
+.runwayModelsGrid .row2 .runwayModelsItem img.icon{
 
     transform: translate(-30px, 0px);
     height: 50px;
@@ -116,17 +136,49 @@ img.icon{
 
 /*==================================================*/
 /*SKEW IMAGE STYLES*/
-.runwayModelsItem:not(:last-child){
+.runwayModelsGrid .row1 .runwayModelsItem,.runwayModelsGrid .row2 .runwayModelsItem:not(:last-child){
     z-index: 1;
     transform: skewX(-20deg);
+    
 }
 
-.runwayModelsItem img{
-    transform: skewX(20deg) scale(1.8) translateY(100px) translateX(-10px);
+.row1 .runwayModelsItem img{
+    transform: skewX(20deg) scale(1.8) translateY(80px) translateX(0px);
 }
 
+.row2 .runwayModelsItem img{
+    transform: skewX(20deg) scale(1.8) translateY(70px) translateX(0px);
+}
 
-.runwayModelsGrid .runwayModelsItem:not(:last-child){
-    margin-left: 26%;
+/*STYLES FOR PERFORMERS SECTION*/
+.performers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
 
+.performers h1{
+    font-size: 40px;
+    font-weight: 500;
+    padding: 100px 0;
+}
+.performers p{
+    font-size: 20px;
+    padding-bottom: 60px;
+}
+.performers .performersGrid{
+    display: flex;
+    gap: 90px;
+    padding: 0 288px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.performers .performersGrid .performersImageWrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.4);
 }
