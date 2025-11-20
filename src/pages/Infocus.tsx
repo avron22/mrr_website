@@ -18,7 +18,7 @@ const Infocus = () => {
     return(
         <>
         <div className="w-full sm:py-5 lg:py-25">
-            <img className="sm:ml-5 lg:ml-25 w-[250px] 2xl:w-[400px]" src="/src/assets/infocus.png" alt="" />
+            <img className="sm:ml-5 lg:ml-25 w-[250px] 2xl:w-[400px]" src="https://drive.developershideout.com:4431/mrr_img/infocus.png" alt="" />
             {/*RUNWAY MODELS SECTION */}
             <section className="overflow-hidden flex flex-col items-center justify-center">
                 <h1 className="text-[40px] 2xl:text-5xl 2xl:pb-5 font-medium">Runway Models</h1>
@@ -27,27 +27,27 @@ const Infocus = () => {
                     <div className=" sm:grid sm:grid-cols-2 sm:pl-0 sm:gap-2 md:max-lg:pl-[10vw] md:max-lg:pr-[5vw] lg:max-xl:pl-[95px] md:max-lg:min-h-[150px] lg:max-xl:min-h-[250px] xl:max-2xl:min-h-[400px] xl:max-2xl:pl-[155px] 2xl:min-h-[500px] 2xl:pl-[260px] 2xl:pr-[50px] md:grid md:grid-cols-4 xl:gap-5 justify-items-start">
                         <div className="sm:max-lg:h-auto lg:max-xl:h-[250px] xl:max-2xl:h-[400px] 2xl:h-[550px] relative overflow-hidden  z-1 skew-x-[-20deg]">
                             <div className="performersImageWrapper cursor-pointer"
-                                 onClick={() => openLightbox("./src/assets/Artboard-1.png")}>
+                                 onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Artboard-1.png")}>
                                 <img className="block w-full h-auto object-cover skew-x-[20deg] sm:scale-[1.7] md:scale-[1.6] sm:translate-y-[50px] md:translate-y-[40px] xl:translate-y-[80px] transition-all duration-400 ease-in-out hover:translate-x-[-10px]" 
-                                     src="./src/assets/Artboard-1.png" 
+                                     src="https://drive.developershideout.com:4431/mrr_img/Artboard-1.png" 
                                      alt="Model 1" 
                                 />
                             </div> 
                         </div>
                         <div className="sm:max-lg:h-auto lg:max-xl:h-[250px] xl:max-2xl:h-[400px] 2xl:h-[550px] relative overflow-hidden  z-1 skew-x-[-20deg]">
                             <div className="performersImageWrapper cursor-pointer"
-                                 onClick={() => openLightbox("./src/assets/Artboard-2.png")}>
+                                 onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Artboard-2.png")}>
                                     <img className="block w-full h-auto object-cover skew-x-[20deg] sm:scale-[1.7] md:scale-[1.6] sm:translate-y-[50px] md:translate-y-[40px] xl:translate-y-[80px] transition-all duration-400 ease-in-out hover:translate-x-[-10px]" 
-                                         src="./src/assets/Artboard-2.png" 
+                                         src="https://drive.developershideout.com:4431/mrr_img/Artboard-2.png" 
                                          alt="Model 2" 
                                     />
                             </div> 
                         </div>
                         <div className="sm:max-lg:h-auto lg:max-xl:h-[250px] xl:max-2xl:h-[400px] 2xl:h-[550px] relative overflow-hidden  z-1 skew-x-[-20deg]">
                             <div className="performersImageWrapper cursor-pointer"
-                                 onClick={() => openLightbox("./src/assets/Artboard-3.png")}>
+                                 onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Artboard-3.png")}>
                                     <img className="block w-full h-auto object-cover skew-x-[20deg] sm:scale-[1.7] md:scale-[1.6] sm:translate-y-[50px] md:translate-y-[40px] xl:translate-y-[80px] transition-all duration-400 ease-in-out hover:translate-x-[-10px]" 
-                                         src="./src/assets/Artboard-3.png" 
+                                         src="https://drive.developershideout.com:4431/mrr_img/Artboard-3.png" 
                                          alt="Model 3" 
                                     />
                             </div> 
@@ -55,9 +55,9 @@ const Infocus = () => {
                         </div>
                         <div className="sm:max-lg:h-auto lg:max-xl:h-[250px] xl:max-2xl:h-[400px] 2xl:h-[550px] relative overflow-hidden  z-1 skew-x-[-20deg]">
                             <div className="performersImageWrapper cursor-pointer"
-                                 onClick={() => openLightbox("./src/assets/Artboard-4.png")}>
+                                 onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Artboard-4.png")}>
                                     <img className="block w-full h-auto object-cover skew-x-[20deg] sm:scale-[1.7] md:scale-[1.6] sm:translate-y-[50px] md:translate-y-[40px] xl:translate-y-[80px] transition-all duration-400 ease-in-out hover:translate-x-[-10px]"
-                                         src="./src/assets/Artboard-4.png"
+                                         src="https://drive.developershideout.com:4431/mrr_img/Artboard-4.png"
                                         alt="Model 4" 
                                     />
                             </div> 
@@ -67,27 +67,27 @@ const Infocus = () => {
                     <div className="sm:grid sm:grid-cols-2 sm:pr-0 sm:gap-2 md:max-lg:pl-[2.5vw] md:max-lg:pr-[12.5vw] lg:max-xl:pr-[95px] lg:max-xl:min-h-[250px] xl:max-2xl:min-h-[400px] xl:max-2xl:pr-[150px] 2xl:min-h-[500px] 2xl:pl-[50px] 2xl:pr-[260px] md:grid md:grid-cols-4 xl:gap-5 justify-items-start">
                         <div className="sm:max-lg:h-auto lg:max-xl:h-[250px] xl:max-2xl:h-[400px] 2xl:h-[550px] relative overflow-hidden  z-1 skew-x-[-20deg]">
                             <div className="performersImageWrapper cursor-pointer"
-                                 onClick={() => openLightbox("./src/assets/Artboard-5.png")}>
+                                 onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Artboard-5.png")}>
                                     <img className=" block w-full h-auto object-cover skew-x-[20deg] sm:scale-[1.7] md:scale-[1.6] sm:translate-y-[50px] md:translate-y-[40px] :translate-y-[50px] xl:translate-y-[70px] transition-all duration-400 ease-in-out hover:translate-x-[-10px]"
-                                         src="./src/assets/Artboard-5.png" 
+                                         src="https://drive.developershideout.com:4431/mrr_img/Artboard-5.png" 
                                          alt="Model 5" 
                                     />
                             </div>                    
                         </div>
                         <div className="sm:max-lg:h-auto lg:max-xl:h-[250px] xl:max-2xl:h-[400px] 2xl:h-[550px] relative overflow-hidden  z-1 skew-x-[-20deg]">
                             <div className="performersImageWrapper cursor-pointer"
-                                 onClick={() => openLightbox("./src/assets/Artboard-6.png")}>
+                                 onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Artboard-6.png")}>
                                     <img className=" block w-full h-auto object-cover skew-x-[20deg] sm:scale-[1.7] md:scale-[1.6] sm:translate-y-[50px] md:translate-y-[40px] xl:translate-y-[70px] transition-all duration-400 ease-in-out hover:translate-x-[-10px]"
-                                         src="./src/assets/Artboard-6.png" 
+                                         src="https://drive.developershideout.com:4431/mrr_img/Artboard-6.png" 
                                          alt="Model 6" 
                                     />
                             </div>          
                         </div>
                         <div className="sm:max-md:translate-x-[50%] sm:max-lg:h-auto lg:max-xl:h-[250px] xl:max-2xl:h-[400px] 2xl:h-[550px] relative overflow-hidden  z-1 skew-x-[-20deg]">
                             <div className="performersImageWrapper cursor-pointer"
-                                 onClick={() => openLightbox("./src/assets/Artboard-7.png")}>
+                                 onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Artboard-7.png")}>
                                     <img className=" block w-full h-auto object-cover skew-x-[20deg] sm:scale-[1.7] md:scale-[1.6] sm:translate-y-[50px] md:translate-y-[40px] xl:translate-y-[70px] transition-all duration-400 ease-in-out hover:translate-x-[-10px]"
-                                         src="./src/assets/Artboard-7.png" 
+                                         src="https://drive.developershideout.com:4431/mrr_img/Artboard-7.png" 
                                          alt="Model 7" 
                                     />  
                             </div> 
@@ -103,7 +103,7 @@ const Infocus = () => {
                                             <span className="sm:max-lg:text-[18px] lg:max-xl:text-xl relative text-3xl tracking-wider z-[1] group-hover:text-[var(--bg)] transition-colors duration-400 ease-in-out">Contact Us</span>
                                         </button>
                                         <img className="translate-x-[-30px] h-[50px] w-[50px] opacity-0 transition-all duration-400 ease-in-out group-hover: group-hover:translate-y-[-40px] group-hover:translate-x-0 group-hover:opacity-100" 
-                                            src="./src/assets/Icon-weather-stars.svg" 
+                                            src="https://drive.developershideout.com:4431/mrr_img/Icon-weather-stars.svg" 
                                             alt="" 
                                         />
                                     </a>
@@ -120,38 +120,38 @@ const Infocus = () => {
                 <div className="sm:max-lg:px-0 sm:max-md:gap-[10px] sm:max-md:grid sm:max-md:grid-cols-2 md:max-lg:gap-[60px] lg:max-xl:px-[150px] xl:max-2xl:px-[288px] flex gap-[90px] px-[288px] w-full justify-between">
                     <div
                         className="sm:max-md:hidden performersImageWrapper cursor-pointer"
-                        onClick={() => openLightbox("./src/assets/Performer-1.jpg")}>
+                        onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Performer-1.jpg")}>
                         <img
                             className="w-full h-auto object-cover shadow-[3px_3px_20px_0px_rgba(0,0,0,0.4)]"
-                            src="./src/assets/Performer-1.jpg"
+                            src="https://drive.developershideout.com:4431/mrr_img/Performer-1.jpg"
                             alt="Performer 1"
                         />
                     </div>
                     <div
                         className="performersImageWrapper cursor-pointer"
-                        onClick={() => openLightbox("./src/assets/Performer-2.jpg")}>
+                        onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Performer-2.jpg")}>
                         <img
                             className="w-full h-auto object-cover shadow-[3px_3px_20px_0px_rgba(0,0,0,0.4)]"
-                            src="./src/assets/Performer-2.jpg"
+                            src="https://drive.developershideout.com:4431/mrr_img/Performer-2.jpg"
                             alt="Performer 2"
                         />
                     </div>
                     <div
                         className="performersImageWrapper cursor-pointer"
-                        onClick={() => openLightbox("./src/assets/Performer-3.jpg")}>
+                        onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Performer-3.jpg")}>
                         <img
                             className="w-full h-auto object-cover shadow-[3px_3px_20px_0px_rgba(0,0,0,0.4)]"
-                            src="./src/assets/Performer-3.jpg"
+                            src="https://drive.developershideout.com:4431/mrr_img/Performer-3.jpg"
                             alt="Performer 3"
                         />
                     </div>
                     {/*Mobile Performer Image 1 */}
                     <div
                         className="sm:max-md:col-span-2 md:hidden performersImageWrapper cursor-pointer"
-                        onClick={() => openLightbox("./src/assets/Performer-1.jpg")}>
+                        onClick={() => openLightbox("https://drive.developershideout.com:4431/mrr_img/Performer-1.jpg")}>
                         <img
                             className="w-full h-auto sm:max-md:max-h-[500px] object-cover object-top shadow-[3px_3px_20px_0px_rgba(0,0,0,0.4)]"
-                            src="./src/assets/Performer-1.jpg"
+                            src="https://drive.developershideout.com:4431/mrr_img/Performer-1.jpg"
                             alt="Performer 1"
                         />
                     </div>
@@ -164,40 +164,40 @@ const Infocus = () => {
                 {/*Desktop Events */}
                 <div className="sm:max-md:hidden md:max-xl:gap-x-[60px] md:max-xl:gap-y-[80px] 2xl:gap-[300px] grid grid-cols-3 gap-30">
                     <div className="eventImageWrapper">
-                        <img src="./src/assets/Event-1.png" className="2xl:scale-[1.4]" alt="Event 1" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-1.png" className="2xl:scale-[1.4]" alt="Event 1" />
                     </div>
                     <div className="eventImageWrapper">
-                        <img src="./src/assets/Event-2.png" className="2xl:scale-[1.4]" alt="Event 2" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-2.png" className="2xl:scale-[1.4]" alt="Event 2" />
                     </div>
                     <div className="eventImageWrapper">
-                        <img src="./src/assets/Event-3.png" className="2xl:scale-[1.4]" alt="Event 3" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-3.png" className="2xl:scale-[1.4]" alt="Event 3" />
                     </div>
                     <div className="eventImageWrapper">
-                        <img src="./src/assets/Event-4.png" className="2xl:scale-[1.4]" alt="Event 4" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-4.png" className="2xl:scale-[1.4]" alt="Event 4" />
                     </div>
                     <div className="eventImageWrapper">
-                        <img src="./src/assets/Event-5.png" className="2xl:scale-[1.4]" alt="Event 5" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-5.png" className="2xl:scale-[1.4]" alt="Event 5" />
                     </div>
                     <div className="eventImageWrapper">
-                        <img src="./src/assets/Event-6.png" className="2xl:scale-[1.4]" alt="Event 6" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-6.png" className="2xl:scale-[1.4]" alt="Event 6" />
                     </div>
                 </div>
                 {/*Mobile Events */}
                 <div className="md:hidden sm:max-md:gap-1 sm:max-md:grid sm:max-md:grid-cols-2">
                     <div className="eventImageWrapper">
-                        <img src="./src/assets/Event-3.png" alt="Event 1" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-3.png" alt="Event 1" />
                     </div>
                     <div className="eventImageWrapper">
-                        <img src="./src/assets/Event-2.png" alt="Event 2" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-2.png" alt="Event 2" />
                     </div>
                     <div className="eventImageWrapper col-span-2 m-auto">
-                        <img src="./src/assets/Event-1.png" alt="Event 3" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-1.png" alt="Event 3" />
                     </div>
                     <div className="eventImageWrapper">
-                        <img src="./src/assets/Event-5.png" alt="Event 5" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-5.png" alt="Event 5" />
                     </div>
                     <div className="eventImageWrapper">
-                        <img src="./src/assets/Event-6.png" alt="Event 6" />
+                        <img src="https://drive.developershideout.com:4431/mrr_img/Event-6.png" alt="Event 6" />
                     </div>
                 </div>
             </section>
