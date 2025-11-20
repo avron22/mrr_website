@@ -23,7 +23,7 @@ export default function Navbar() {
     <header className="nav flex items-center justify-between sm:px-[20px] sm:py-4 md:px-20 md:pt-10 lg:px-[60px] lg:py-4 2xl:px-[288px] 2xl:py-10 relative">
       {/* Logo */}
       <a className="siteLogo sm:max-lg:w-[40%] sm:max-lg:p-[10px]" href="/">
-        <img src="/src/assets/logos/site-logo.png" alt="Site Logo" />
+        <img src="https://drive.developershideout.com:4431/mrr_img/logos/site-logo.png" alt="Site Logo" />
       </a>
 
       {/* HAMBURGER */}
@@ -105,7 +105,7 @@ export default function Navbar() {
             
             {/*site logo mobile */}
             <a className="p-0 self-center sm:w-[160px] md:w-[230px] pt-10" href="/">
-              <img src="/src/assets/logos/Transparent_MRR_logo.png" alt="Site Logo" />
+              <img src="https://drive.developershideout.com:4431/mrr_img/logos/Transparent_MRR_logo.png" alt="Site Logo" />
             </a>
             <section className="sm:max-w-[200px] mx-auto">
               <div className="grid grid-cols-3 gap-6">
