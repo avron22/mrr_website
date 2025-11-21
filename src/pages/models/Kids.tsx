@@ -1,15 +1,18 @@
 const Kids = () => {
+  const baseURL = "https://drive.developershideout.com:4431/mrr_img";
+
+  const getImg = (n: string) => `${baseURL}/Artboard${n}.png`;
+
   return (
     <div className="w-full py-24">
-      {/* Main header image */}
       <img
         className="ml-24 w-[250px] max-md:ml-5 max-md:w-[200px]"
-        src="/src/assets/kids.png"
+        src={`${baseURL}/kids.png`}
         alt="Kids Models Title"
       />
 
-      {/* Models Grid Container */}
       <div className="flex flex-col gap-12 px-24 mt-12 max-lg:px-10 max-md:px-6">
+
         {/* Row 1 */}
         <div className="flex flex-wrap justify-center gap-7 max-[425px]:flex-col max-[425px]:items-center">
           {["1", "2", "3", "4"].map((n) => (
@@ -21,7 +24,7 @@ const Kids = () => {
                          max-[425px]:w-[90%] max-[425px]:max-w-[340px] max-[425px]:h-[260px]"
             >
               <img
-                src={`/src/assets/Artboard ${n}.png`}
+                src={getImg(n)}
                 alt={`Kids Model ${n}`}
                 className="absolute top-0 left-0 w-full h-full object-cover transform skew-x-[20deg] scale-[1.6] translate-y-[10%]
                            transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]
@@ -42,7 +45,7 @@ const Kids = () => {
                          max-[425px]:w-[90%] max-[425px]:max-w-[340px] max-[425px]:h-[260px]"
             >
               <img
-                src={`/src/assets/Artboard ${n}.png`}
+                src={getImg(n)}
                 alt={`Kids Model ${n}`}
                 className="absolute top-0 left-0 w-full h-full object-cover transform skew-x-[20deg] scale-[1.5] translate-y-[12%]
                            transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]
@@ -63,7 +66,7 @@ const Kids = () => {
                          max-[425px]:w-[90%] max-[425px]:max-w-[340px] max-[425px]:h-[260px]"
             >
               <img
-                src={`/src/assets/Artboard ${n}.png`}
+                src={getImg(n)}
                 alt={`Kids Model ${n}`}
                 className="absolute top-0 left-0 w-full h-full object-cover transform skew-x-[20deg] scale-[1.5] translate-y-[12%]
                            transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]
