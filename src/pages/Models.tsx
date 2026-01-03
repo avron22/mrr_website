@@ -257,7 +257,7 @@ const Models: React.FC = () => {
      
       <img
         className="ml-24 w-[250px] max-md:ml-5 max-md:w-[200px] max-sm:ml-2 max-sm:w-[160px]"
-        src="/src/assets/models.png"
+        src="https://drive.developershideout.com:4431/mrr_img/models.png"
         alt="Manila Runway Republic"
         loading="eager"
       />

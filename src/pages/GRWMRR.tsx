@@ -45,7 +45,7 @@ const GRWMRR: React.FC = () => {
       <div className="w-full my-8">
         <div className="flex justify-start px-8 max-md:justify-center">
           <img
-            src="/src/assets/mrr.png"
+            src="https://drive.developershideout.com:4431/mrr_img/mrr.png"
             alt="Get Ready with MRR"
             className="w-[40%] h-auto block max-md:w-[70%]"
           />
@@ -132,7 +132,7 @@ const GRWMRR: React.FC = () => {
 
             <img
               className="translate-x-[-30px] h-[50px] w-[50px] opacity-0 transition-all duration-400 ease-in-out group-hover:translate-y-[-40px] group-hover:translate-x-0 group-hover:opacity-100"
-              src="/src/assets/Icon-weather-stars.svg"
+              src="https://drive.developershideout.com:4431/mrr_img/Icon-weather-stars.svg"
               alt="Stars icon"
             />
           </a>

@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
       {/* Banner */}
       <div className="mb-16 ml-24">
         <img
-          src="/src/assets/contact-us.png"
+          src="https://drive.developershideout.com:4431/mrr_img/contact-us.png"
           alt="Contact Banner"
           className="w-1/5 h-auto"
         />
@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
           <div className="flex flex-col gap-6">
             {/* Location */}
             <div className="flex items-start gap-4 text-gray-700">
-              <img src="/src/assets/pin.svg" alt="Location" className="w-7 h-7" />
+              <img src="https://drive.developershideout.com:4431/mrr_img/pin.svg" alt="Location" className="w-7 h-7" />
               <p className="text-base leading-relaxed">
                 29 20th Ave, Cubao, Quezon City, 1110 Metro Manila
               </p>
@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
 
             {/* Email */}
             <div className="flex items-start gap-4 text-gray-700">
-              <img src="/src/assets/email.svg" alt="Email" className="w-7 h-7" />
+              <img src="https://drive.developershideout.com:4431/mrr_img/email.svg" alt="Email" className="w-7 h-7" />
               <div className="flex flex-col gap-1">
                 <p className="text-base">models@manilarunwayrepublic.com</p>
                 <p className="text-base">kathy@manilarunwayrepublic.com</p>
